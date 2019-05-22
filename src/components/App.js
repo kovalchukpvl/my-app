@@ -13,6 +13,13 @@ class App extends React.Component {
     dataClick: null
   }
 
+  // componentDidMount() {
+  //   this.ThisDate();
+  // }
+
+  // ThisDate() {
+
+  // }
 
   onPickDate = (date) => {
 

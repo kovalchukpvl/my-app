@@ -3,6 +3,7 @@ import ElementList from './ElementList';
 // import arrowup from '../img/arrowup.png';
 
 
+
 class ListContent extends React.Component {
 
     state = {
@@ -27,7 +28,7 @@ class ListContent extends React.Component {
     }
 
     fetchThisDay() {
-        fetch('http://api.tvmaze.com/schedule?country=US&date=' + this.props.dataClick.format('YYYY-MM-DD'))
+        fetch('https://api.tvmaze.com/schedule?country=US&date=' + this.props.dataClick.format('YYYY-MM-DD'))
             .then(response => response.json())
             .then(data =>
                 this.setState({
@@ -35,12 +36,11 @@ class ListContent extends React.Component {
                     isLoading: false,
                 })
             )
-            .catch(error => this.setState({ error, isLoading: false }));
     }
 
 
     fetchBeforeDay() {
-        fetch('http://api.tvmaze.com/schedule?country=US&date=' + this.props.dataClick.subtract(1, 'days').startOf('day').format('YYYY-MM-DD'))
+        fetch('https://api.tvmaze.com/schedule?country=US&date=' + this.props.dataClick.subtract(1, 'days').startOf('day').format('YYYY-MM-DD'))
             .then(response => response.json())
             .then(data =>
                 this.setState({
@@ -48,33 +48,34 @@ class ListContent extends React.Component {
                     isLoading: false,
                 })
             )
-            .catch(error => this.setState({ error, isLoading: false }));
     }
 
 
 
     ListCheck() {
 
-        this.setState((prevstate, props) => ({ ...prevstate, checkList: !this.state.checkList}))
+        this.setState((prevstate, props) => ({ ...prevstate, checkList: !this.state.checkList }));
     }
 
     ListCheckBefore() {
-        this.setState((prevstate, props) => ({ ...prevstate, checkListBefore: !this.state.checkListBefore }))
+        this.setState((prevstate, props) => ({ ...prevstate, checkListBefore: !this.state.checkListBefore }));
     }
 
     MovieMore() {
         if (!this.state.checkList) {
-            return 'More serial (' + this.state.thisDay.length + ') ∨';
+            // return 'More serial (' + this.state.thisDay.length + ') ∨';
+            return 'More serial (+20) ∨';
         } else {
-            return 'The main thing ∧'
+            return 'The main thing ∧';
         }
     }
 
     MovieMoreBefore() {
         if (!this.state.checkListBefore) {
-            return 'More serial (' + this.state.beforeDay.length + ') ∨';
+            // return 'More serial (' + this.state.beforeDay.length + ') ∨';
+            return 'More serial (+20) ∨';
         } else {
-            return 'The main thing ∧'
+            return 'The main thing ∧';
         }
     }
 
@@ -83,14 +84,17 @@ class ListContent extends React.Component {
 
         var temp = [];
         var thisD = this.state.thisDay;
+     
         if (!this.state.checkList) {
 
-            temp = thisD.slice(0, 2);
+            temp = thisD.slice(0, 3);
+            console.log(temp);
         } else {
-            temp = thisD.slice();
+            temp = thisD.slice(0, 20);
+            console.log(temp);
         }
 
-        // console.log(temp)
+        
 
         var out = temp.map(movie => {
             return (
@@ -106,7 +110,7 @@ class ListContent extends React.Component {
 
         //----------------------------------------------
 
-        // console.log(this.state.beforeDay);
+      
 
         var tempBefore = [];
         var BeforeD = this.state.beforeDay;
@@ -114,10 +118,9 @@ class ListContent extends React.Component {
 
             tempBefore = BeforeD.slice(0, 4);
         } else {
-            tempBefore = BeforeD.slice();
+            tempBefore = BeforeD.slice(0, 20);
         }
 
-        // console.log(temp)
 
         var outBefore = tempBefore.map(movie => {
             return (

@@ -137,6 +137,10 @@ main p {
   padding-top: 1.5vh;
 }
 
+.Calendar-grid-item--current {
+  border: 1px solid red;
+}
+
 .movie-list {
   display: flex;
   flex-direction: column;
