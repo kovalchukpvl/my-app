@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/my-app/static/css/main.383f6fdc.chunk.css",
-    "main.js": "/my-app/static/js/main.c665e9b0.chunk.js",
-    "main.js.map": "/my-app/static/js/main.c665e9b0.chunk.js.map",
-    "runtime~main.js": "/my-app/static/js/runtime~main.6019dd84.js",
-    "runtime~main.js.map": "/my-app/static/js/runtime~main.6019dd84.js.map",
-    "static/js/2.00d5a2ca.chunk.js": "/my-app/static/js/2.00d5a2ca.chunk.js",
-    "static/js/2.00d5a2ca.chunk.js.map": "/my-app/static/js/2.00d5a2ca.chunk.js.map",
-    "index.html": "/my-app/index.html",
-    "precache-manifest.8d5bcf0a860cc27ccfa03316088be45a.js": "/my-app/precache-manifest.8d5bcf0a860cc27ccfa03316088be45a.js",
-    "service-worker.js": "/my-app/service-worker.js",
-    "static/css/main.383f6fdc.chunk.css.map": "/my-app/static/css/main.383f6fdc.chunk.css.map",
-    "static/media/TV.png": "/my-app/static/media/TV.a7886965.png",
-    "static/media/App.css": "/my-app/static/media/headerfon.6a9f050b.png",
-    "static/media/no-image.jpg": "/my-app/static/media/no-image.eced8512.jpg"
+    "main.css": "/myapp/static/css/main.56732d76.chunk.css",
+    "main.js": "/myapp/static/js/main.c665e9b0.chunk.js",
+    "main.js.map": "/myapp/static/js/main.c665e9b0.chunk.js.map",
+    "runtime~main.js": "/myapp/static/js/runtime~main.e4f53ea3.js",
+    "runtime~main.js.map": "/myapp/static/js/runtime~main.e4f53ea3.js.map",
+    "static/js/2.00d5a2ca.chunk.js": "/myapp/static/js/2.00d5a2ca.chunk.js",
+    "static/js/2.00d5a2ca.chunk.js.map": "/myapp/static/js/2.00d5a2ca.chunk.js.map",
+    "index.html": "/myapp/index.html",
+    "precache-manifest.f5eb516ccd436e5b2817c745f376bdec.js": "/myapp/precache-manifest.f5eb516ccd436e5b2817c745f376bdec.js",
+    "service-worker.js": "/myapp/service-worker.js",
+    "static/css/main.56732d76.chunk.css.map": "/myapp/static/css/main.56732d76.chunk.css.map",
+    "static/media/TV.png": "/myapp/static/media/TV.a7886965.png",
+    "static/media/App.css": "/myapp/static/media/headerfon.6a9f050b.png",
+    "static/media/no-image.jpg": "/myapp/static/media/no-image.eced8512.jpg"
   }
 }
