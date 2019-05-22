@@ -2,7 +2,7 @@
   "name": "my-app",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://kovalchukpvl.github.io/myapp",
+  "homepage": "https://kovalchukpvl.github.io/myapp/",
   "dependencies": {
     "gh-pages": "^2.0.1",
     "moment": "^2.24.0",
