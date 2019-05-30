@@ -193,6 +193,7 @@ main p {
   text-align: start;
   border-radius: 5px;
   padding: 10px 20px;
+  margin-left: 5%;
   float: left;
   font-size: 13px;
 }
